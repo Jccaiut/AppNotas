@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/notes"></ion-back-button> </ion-buttons>
+    <ion-title>Editar Nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding" *ngIf="note"> <ion-item>
+      <ion-input label="Título" label-placement="floating" [(ngModel)]="editedTitle"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top">
+      <ion-textarea label="Conteúdo" label-placement="floating" [(ngModel)]="editedContent" autoGrow="true"></ion-textarea>
+    </ion-item>
+
+        <ion-item class="ion-margin-top">
+      <ion-label>Data do Lembrete</ion-label>
+      <ion-datetime-button datetime="reminderDate"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="reminderDate" [(ngModel)]="editedReminderDate" presentation="date"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+
+    <ion-item class="ion-margin-top">
+      <ion-label>Hora do Lembrete</ion-label>
+      <ion-datetime-button datetime="reminderTime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="reminderTime" [(ngModel)]="editedReminderTime" presentation="time"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+    <p class="note-timestamp ion-padding-start" *ngIf="note.createdAt">
+      Criado em: {{ note.createdAt | date:'short' }}
+    </p>
+
+    <ion-button expand="block" class="ion-margin-top" (click)="saveNote()">Salvar Alterações</ion-button>
+    <ion-button expand="block" fill="outline" class="ion-margin-top" (click)="goBack()">Cancelar</ion-button>
+  </div>
+
+  <div *ngIf="!note && noteId" class="ion-padding ion-text-center">
+    <p>Carregando nota ou nota não encontrada...</p>
+  </div>
+</ion-content>

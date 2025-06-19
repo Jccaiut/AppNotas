@@ -1,0 +1,88 @@
+/* theme/variables.scss */
+
+:root {
+  /** Ionic variables are global by default */
+  /* Cores do Tema: Azul Marinho Moderno */
+
+  // Azul Principal Escuro
+  --ion-color-primary: #0D47A1;
+  --ion-color-primary-rgb: 13,71,161;
+  --ion-color-primary-contrast: #ffffff; // Texto branco em fundo azul escuro
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #0b3e8e;
+  --ion-color-primary-tint: #2559a9;
+
+  // Cor de Realce (Amarelo Âmbar)
+  --ion-color-secondary: #FFC107; // Use secondary para o realce
+  --ion-color-secondary-rgb: 255,193,7;
+  --ion-color-secondary-contrast: #000000; // Texto preto em fundo amarelo
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #e0a906;
+  --ion-color-secondary-tint: #ffc822;
+
+  // Outras cores do Ionic (mantenha ou ajuste se desejar)
+  --ion-color-tertiary: #4CAF50; // Um verde para ações de "sucesso"
+  --ion-color-tertiary-rgb: 76,175,80;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #439947;
+  --ion-color-tertiary-tint: #5ec662;
+
+  --ion-color-success: #28a745; // Manter padrão
+  --ion-color-success-rgb: 40,167,69;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255,255,255;
+  --ion-color-success-shade: #24913e;
+  --ion-color-success-tint: #3eaf59;
+
+  --ion-color-warning: #ffc107; // Pode ser o mesmo do secondary se for seu realce
+  --ion-color-warning-rgb: 255,193,7;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #e0a906;
+  --ion-color-warning-tint: #ffc822;
+
+  --ion-color-danger: #DC3545; // Vermelho para exclusão
+  --ion-color-danger-rgb: 220,53,69;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255,255,255;
+  --ion-color-danger-shade: #c12f3d;
+  --ion-color-danger-tint: #df4a5b;
+
+  // Cores de Texto e Fundo
+  --ion-color-dark: #212121; // Texto principal (quase preto)
+  --ion-color-dark-rgb: 33,33,33;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255,255,255;
+  --ion-color-dark-shade: #1d1d1d;
+  --ion-color-dark-tint: #373737;
+
+  --ion-color-medium: #757575; // Texto secundário e ícones neutros
+  --ion-color-medium-rgb: 117,117,117;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255,255,255;
+  --ion-color-medium-shade: #676767;
+  --ion-color-medium-tint: #838383;
+
+  --ion-color-light: #F9F9F9; // Fundo geral do app
+  --ion-color-light-rgb: 249,249,249;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0,0,0;
+  --ion-color-light-shade: #dbdbdb;
+  --ion-color-light-tint: #fafa20;
+
+  // Fundo geral da aplicação
+  --ion-background-color: #F9F9F9;
+  --ion-background-color-rgb: 249,249,249;
+
+  // Cor de fundo para itens (notas) - Branco Puro
+  --ion-item-background: #FFFFFF;
+  --ion-item-background-rgb: 255,255,255;
+
+  // Cor do divisor de itens
+  --ion-border-color: #E0E0E0; // Cinza claro para divisores
+  --ion-border-color-rgb: 224,224,224;
+
+  // Você pode ajustar as cores do modo escuro aqui também, se estiver usando-o
+  // @media (prefers-color-scheme: dark) { ... }
+}
